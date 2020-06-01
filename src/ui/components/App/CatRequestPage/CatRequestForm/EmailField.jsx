@@ -10,7 +10,7 @@ export default function EmailField(props) {
       <label className="label">Твоя почта</label>
       <div className="control has-icons-left">
         <input
-          className="input "
+          className="input email"
           type="text"
           placeholder="Введи свою почту"
           onChange={handleEmailChange}

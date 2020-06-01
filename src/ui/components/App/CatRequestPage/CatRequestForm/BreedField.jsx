@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 
+export function breedIsValid(breed) {
+  const re = /^[а-яА-Я]*$/g;
+  return re.test(breed);
+}
+
 export default function BreedField(props) {
   const [isValid, setIsValid] = useState(true);
 
   function handleBreedChange(e) {
     const breed = e.target.value;
-    const re = /^[а-яА-Я]*$/g;
-    const isBreedValid = re.test(breed);
+    const isBreedValid = breedIsValid(breed);
 
     setIsValid(isBreedValid);
 

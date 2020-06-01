@@ -5,7 +5,7 @@ export default function CatRequestsSuccessPage() {
     <section className="section">
       <div className="container">
         <p>Твоя заявка принята!</p>
-        <p>А тесты ты написал?!</p>
+        <p>Го писать тесты :)</p>
       </div>
     </section>
   );

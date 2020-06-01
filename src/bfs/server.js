@@ -20,4 +20,9 @@ app.post(
   catsController.handleCreateCatRequest.bind(catsController)
 );
 
+if (process.env.NODE_ENV === "mocktest") {
+  console.log("using mock API");
+  require("./api-mocks");
+}
+
 app.listen(port, () => console.log(`Started BFS on http://localhost:${port}`));
